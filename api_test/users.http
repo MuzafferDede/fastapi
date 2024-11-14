@@ -1,0 +1,26 @@
+### get all users
+GET http://127.0.0.1:8000/users
+
+### create a new user
+POST http://127.0.0.1:8000/users
+Content-Type: application/json
+
+{
+    "email": "{{$guid}}@example.com",
+    "password": "{{$guid}}"
+}
+
+### read a user
+GET http://127.0.0.1:8000/users/1
+
+### update a user
+PUT http://127.0.0.1:8000/users/1
+Content-Type: application/json
+
+{
+    "email": "{{$guid}}@example.com",
+    "password": "{{$guid}}"
+}
+
+### delete a user
+DELETE http://127.0.0.1:8000/users/1

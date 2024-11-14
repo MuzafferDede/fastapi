@@ -1,0 +1,28 @@
+### get all posts
+GET http://127.0.0.1:8000/posts
+
+### create a new post
+POST http://127.0.0.1:8000/posts
+Content-Type: application/json
+
+{
+    "title": "My First Post",
+    "content": "This is my first post",
+    "published": true
+}
+
+### read a post
+GET http://127.0.0.1:8000/posts/1
+
+### update a post
+PUT http://127.0.0.1:8000/posts/1
+Content-Type: application/json
+
+{
+    "title": "My Updated Post",
+    "content": "This is my updated post",
+    "published": false
+}
+
+### delete a post
+DELETE http://127.0.0.1:8000/posts/11
