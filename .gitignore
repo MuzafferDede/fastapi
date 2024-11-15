@@ -19,3 +19,4 @@ venv/
 # IDE-specific folders
 .vscode/
 .idea/
+.DS_Store
